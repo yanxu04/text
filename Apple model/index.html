@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apple 简化版</title>
+    <link rel="stylesheet" href="index1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  
+</head>
+<script>
+    // 滚动时改变导航栏透明度
+    window.addEventListener('scroll', () => {
+        const navbar = document.querySelector('.navbar');
+        if (window.scrollY > 50) {
+            navbar.style.background = 'rgba(0, 0, 0, 0.95)';
+        } else {
+            navbar.style.background = 'rgba(0, 0, 0, 0.8)';
+        }
+    });
+</script>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <ul>
+            <li><i class="fab fa-apple"></i></li>
+            <li>商店</li>
+            <li>Mac</li>
+            <li>iPad</li>
+            <li>iPhone</li>
+            <li>支持</li>
+        </ul>
+    </nav>
+
+    <!-- 主展示区 -->
+    <section class="hero">
+        <h1>iPhone 16 Pro Max</h1>
+        <h2>钛金属来袭</h2>
+        <div class="links">
+            了解更多 >
+            购买 >
+        </div>
+        < img src="images/iphone.png" alt="iPhone">
+    </section>
+
+    <!-- 产品特性 -->
+    <section class="features">
+        <div class="feature-item">
+            <i class="fas fa-camera"></i>
+            <h3>专业级相机</h3>
+            <p>全新 4800 万像素主摄</p >
+        </div>
+        <div class="feature-item">
+            <i class="fas fa-bolt"></i>
+            <h3>A18 Pro 芯片</h3>
+            <p>单核最强芯片</p >
+        </div>
+        <div class="feature-item">
+            <i class="fas fa-sd-card"></i>
+            <h3>USB-C 接口</h3>
+            <p>更快的数据传输速度</p >
+        </div>
+    </section>
+</body>
+</html>
